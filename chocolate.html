@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Happy Chocolate Day my chocolate boy🍫</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="hearts">
+  <span>❤️</span>
+  <span>💖</span>
+  <span>💕</span>
+  <span>💘</span>
+  <span>💗</span>
+</div>
+<div id="locked">
+  <h2>🔒 Not yet, sir</h2>
+  <p>
+    Aaj nahi…  
+    thoda sabr karo 💌
+  </p>
+</div>
+
+<div id="content" style="display:none;">
+  <h1>🍫 Chocolate Day</h1>
+
+  <p>
+    I wish you a very chocolatey day and i wish you a lots of dark chocolate and buddles of coffee bites for life . And if ever these chocolates stop being manufactured i will learn how to make these for you .and beyond all these my love will never stop doubling 😋❤️
+  </p>
+</div>
+
+ 
+<img src="images/us2.jpeg" class="photo">
+<p class="song">
+  <a href="https://open.spotify.com/track/3bZPdEskcnMdepwCaDSJRl?si=Yr_ck3VDT06eYK75R2Pscg" target="_blank">
+    🎵 Play our song
+  </a>
+</p>
+
+<h3>🔐 second dayyyyyy yayayy</h3>
+
+<p>Sirf tumhare liye hai… password daalo 🤍</p>
+<p style="font-size:14px;">Hint: the date of december we both admire so much 😌</p>
+
+<input type="password" id="passwordInput" placeholder="Enter password">
+
+<br><br>
+
+<button onclick="checkPassword()">Unlock 💌</button>
+
+<p id="error" style="color:red; display:none;">
+  chiiii ye kaise nai pta, phir se try karo
+</p>
+
+<p id="secretMessage" style="display:none; margin-top:20px; font-style:italic;">
+as i have already told you this as well ki how much i love being around you how much i love being touched by you and how much i want you to always be connected in both ways physically aur mentatally . i feel so safe and a sudden sense of home around youuuuuuu. ❤️  
+  🤍
+</p>
+<script>
+function checkPassword() {
+  const correctPassword = "19";
+  const enteredPassword = document.getElementById("passwordInput").value;
+
+  if (enteredPassword === correctPassword) {
+    document.getElementById("secretMessage").style.display = "block";
+    document.getElementById("error").style.display = "none";
+  } else {
+    document.getElementById("error").style.display = "block";
+  }
+}
+</script>
+
+  <a href="teddy.html">
+    <button>Next Surprise 🧸</button>
+  </a>
+  </div>
+
+<script>
+const today = new Date();
+if (today.getDate() === 7 && today.getMonth() === 1) {
+  document.getElementById("locked").style.display = "none";
+  document.getElementById("content").style.display = "block";
+}
+</script>
+</body>
+</html>

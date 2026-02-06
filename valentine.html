@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Valentine ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="hearts">
+  <span>❤️</span>
+  <span>💖</span>
+  <span>💕</span>
+  <span>💘</span>
+  <span>💗</span>
+</div>
+
+  <h1>❤️ Happy Valentine’s Day Babu ❤️</h1>
+
+  <p>
+    As you know these valentine things is not reallyy my kinda thing i just wanted to make you feel special . And make you realise how important and deserving you are.and trust me ye sb phir v bhut chhoti chiz h tum aur bhut jyada deserve krte ho  💖🎬
+  </p>
+  <img src="images/us8.jpeg" class="photo">
+  </p>
+
+  <p style="font-size:16px;margin-top:10px;">
+  One of my favourite memories with you 🤍
+</p>
+<p class="song">
+  <a href="https://open.spotify.com/track/6MZCYPT3hZPzwJGLnXn1RF?si=i2gLJsPRQSe63QqQl12kYw" target="_blank">
+    🎵 Play our song
+  </a>
+  <h3>🔐 One last secret</h3>
+
+<p>hint: kuch aaisa jo meko bahut jayada pasand</p>
+
+<input type="password" id="passwordInput" placeholder="Enter password">
+
+<br><br>
+
+<button onclick="checkPassword()">Unlock 💌</button>
+
+<p id="error" style="color:red; display:none;">
+  Galat password 😌 phir se try karo
+</p>
+
+<p id="secretMessage" style="display:none; margin-top:20px; font-style:italic;">
+  you have came to end of this week but you should always know that our love, our bond will never end like never.  ❤️  
+  I will always love you alwaysss , always remember no third factor can ever separate us . its already forever. I LOVE YOU THE MOST🤍
+</p>
+
+
+<p style="font-style:italic; margin-top:30px;">
+  Koi baat nai… ek din sab thik ho jayega 🤍
+</p>
+
+<button onclick="revealSecret()">Click only if you miss me 🤍</button>
+
+<p id="secret" style="display:none; margin-top:20px; font-style:italic;">
+ ❤️
+</p>
+<script>
+function checkPassword() {
+  const correctPassword = "biryani";
+  const enteredPassword = document.getElementById("passwordInput").value;
+
+  if (enteredPassword === correctPassword) {
+    document.getElementById("secretMessage").style.display = "block";
+    document.getElementById("error").style.display = "none";
+  } else {
+    document.getElementById("error").style.display = "block";
+  }
+}
+</script>
+
+<script>
+function revealSecret() {
+  document.getElementById("secret").style.display = "block";
+}
+</script>
+
+  <p>
+    — Tumhari pyari mahi ❤️
+  </p>
+  <script>
+const today = new Date();
+if (today.getDate() === 8 && today.getMonth() === 1) {
+  document.getElementById("locked").style.display = "none";
+  document.getElementById("content").style.display = "block";
+}
+</script>
+</body>
+</html>

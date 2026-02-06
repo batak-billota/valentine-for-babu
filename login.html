@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login 💖</title>
+  <style>
+    body {
+      background: pink;
+      font-family: cursive;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .box {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+    input {
+      padding: 10px;
+      margin: 8px;
+      width: 200px;
+    }
+    button {
+      padding: 10px 20px;
+      background: hotpink;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    #error {
+      color: red;
+      display: none;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="box">
+  <h2>🔐 Only for you 💕</h2>
+
+  <input type="text" id="user" placeholder="User ID"><br>
+  <input type="password" id="pass" placeholder="Password"><br>
+  <input type="password" id="code" placeholder="Secret Code"><br>
+
+  <button onclick="login()">Enter 💌</button>
+
+  <p id="error">Galat details 😌 phir try karo</p>
+</div>
+
+<script>
+function login() {
+  const user = document.getElementById("user").value;
+  const pass = document.getElementById("pass").value;
+  const code = document.getElementById("code").value;
+
+  if (user === "mahikapriyanshu" && pass === "usbeingtogether" && code === "0308") {
+    
+    sessionStorage.setItem("loggedIn", "yes");
+window.location.href = "index.html";
+
+  } else {
+    document.getElementById("error").style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>

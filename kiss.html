@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>happy happy but still sad Kiss Day loby 😘</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="hearts">
+  <span>❤️</span>
+  <span>💖</span>
+  <span>💕</span>
+  <span>💘</span>
+  <span>💗</span>
+
+<div id="locked">
+  <h2>🔒 Locked</h2>
+  <p>Abhi nahi 😏</p>
+</div>
+
+<div id="content" style="display:none;">
+
+
+  <h1>happy happy but still sad Kiss Day loby 😘</h1>
+
+  <p>
+    Screen ke through hi sahi…  
+    i wish i could kiss you forrrr sooo long at this point. 
+    💋😘
+  </p>
+  <img src="images/us5.jpeg" class="photo">
+<p class="song">
+  <a href="https://open.spotify.com/track/0h0gWburhWxIhV9h7kyX3l?si=Qs7kFiQcR-OU2Q_IGJhYZw" target="_blank">
+    🎵 Play our song
+  </a>
+</p>
+
+<h3>🔐hehehe ... boaring to nhi h n</h3>
+
+<p>Sirf tumhare liye hai… password daalo 🤍</p>
+<p style="font-size:14px;">Hint: date we kissed for very first time</p>
+
+<input type="password" id="passwordInput" placeholder="Enter password">
+
+<br><br>
+
+<button onclick="checkPassword()">Unlock 💌</button>
+
+<p id="error" style="color:red; display:none;">
+  hawwww bhul gye, phir se try karo
+</p>
+
+<p id="secretMessage" style="display:none; margin-top:20px; font-style:italic;">
+  
+</p>
+<script>
+function checkPassword() {
+  const correctPassword = "29-07-24";
+  const enteredPassword = document.getElementById("passwordInput").value;
+
+  if (enteredPassword === correctPassword) {
+    document.getElementById("secretMessage").style.display = "block";
+    document.getElementById("error").style.display = "none";
+  } else {
+    document.getElementById("error").style.display = "block";
+  }
+}
+</script>
+
+  <a href="valentine.html">
+    <button>Final Surprise ❤️</button>
+  </a>
+  <script>
+const today = new Date();
+if (today.getDate() === 7 && today.getMonth() === 1) {
+  document.getElementById("locked").style.display = "none";
+  document.getElementById("content").style.display = "block";
+}
+</script>
+</body>
+</html>

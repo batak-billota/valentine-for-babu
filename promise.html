@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Promise Day 💌</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="hearts">
+  <span>❤️</span>
+  <span>💖</span>
+  <span>💕</span>
+  <span>💘</span>
+  <span>💗</span>
+<div id="locked">
+  <h2>🔒 Locked</h2>
+  <p>Promise patience maangta hai 💗</p>
+</div>
+
+<div id="content" style="display:none;">
+
+
+  <h1>💌 Promise Day</h1>
+
+  <p>
+    Koi baat nai babu…  
+    ek din sab thik ho jayega 💖  
+    aur hm dono ekdum pass pass rhenge hmesa — aur ab se tb tk hm yahi h.  
+  </p>
+<img src="images/us6.jpeg" class="photo">
+<p class="song">
+  <a href="https://open.spotify.com/track/680KozYltvYSBwF6T71SEa?si=VWhIhdQLRbmPglBkI8ZV8Q" target="_blank">
+    🎵 Play our song
+  </a>
+
+</p>
+<h3>🔐 4th day-4th secret</h3>
+
+<p>Sirf tumhare liye hai… password daalo🤍</p>
+<p style="font-size:14px;">Hint: hamara fav song (without space)</p>
+
+<input type="password" id="passwordInput" placeholder="Enter password">
+
+<br><br>
+
+<button onclick="checkPassword()">Unlock 💌</button>
+
+<p id="error" style="color:red; display:none;">
+  ye v nhi pta chi chi, phir se try karo
+</p>
+
+<p id="secretMessage" style="display:none; margin-top:20px; font-style:italic;">
+  so today i want to promise you that i will never leave this bond , i gurantee to marry you and only you one day for sure . please please never let me go in any circumstances , i owe you everything. 🤍
+</p>
+<script>
+function checkPassword() {
+  const correctPassword = "badeachelagtehai";
+  const enteredPassword = document.getElementById("passwordInput").value;
+
+  if (enteredPassword === correctPassword) {
+    document.getElementById("secretMessage").style.display = "block";
+    document.getElementById("error").style.display = "none";
+  } else {
+    document.getElementById("error").style.display = "block";
+  }
+}
+</script>
+
+  <a href="hug.html">
+    <button>Next Surprise 🤗</button>
+  </a>
+  </div>
+
+<script>
+const today = new Date();
+if (today.getDate() === 7 && today.getMonth() === 1) {
+  document.getElementById("locked").style.display = "none";
+  document.getElementById("content").style.display = "block";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+body {
+  background: linear-gradient(#ffe6f0, #fff);
+  font-family: 'Segoe UI', cursive;
+  text-align: center;
+  padding: 40px;
+  color: #4b002d;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: auto;
+}
+
+button {
+  background-color: #ff4d88;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+button:hover {
+  background-color: #e6005c;
+}
+.photo {
+  width: 260px;
+  border-radius: 20px;
+  margin-top: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.song a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #ff1a75;
+  font-weight: bold;
+}
+
+.song a:hover {
+  text-decoration: underline;
+}
+
+audio {
+  margin-top: 20px;
+}
+.hearts span {
+  position: fixed;
+  bottom: -20px;
+  font-size: 24px;
+  animation: floatUp 6s linear infinite;
+}
+
+.hearts span:nth-child(1) { left: 10%; animation-delay: 0s; }
+.hearts span:nth-child(2) { left: 30%; animation-delay: 2s; }
+.hearts span:nth-child(3) { left: 50%; animation-delay: 4s; }
+.hearts span:nth-child(4) { left: 70%; animation-delay: 1s; }
+.hearts span:nth-child(5) { left: 90%; animation-delay: 3s; }
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+body {
+  animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+button:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}

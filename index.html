@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script>
+  if (!sessionStorage.getItem("loggedIn")) {
+    window.location.href = "login.html";
+  }
+</script>
+
+<head>
+  <meta charset="UTF-8">
+  <title>For you 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="hearts">
+  <span>❤️</span>
+  <span>💖</span>
+  <span>💕</span>
+  <span>💘</span>
+  <span>💗</span>
+</div>
+
+
+<h1>Hi Priyanshu❤️</h1>
+<p>This is our Valentine website.</p>
+  <title>happiest rose day to my sunflower🌹</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>happieest rose day to my sunflower🌹</h1>
+
+  <p>
+    Hi, priyanshu so its the first day. for me you are the only sunflower.🌹❤️  
+    I LOVE YOU more then hundreds of roses and millions of sunflowers .
+  </p>
+
+  <audio controls>
+    <source src="voice-note.mp3.mp3" type="audio/mpeg">
+  </audio>
+
+  <br><br>
+  <img src="images/us1.jpeg" class="photo">
+
+  
+<p class="song">
+  <a href="https://open.spotify.com/track/5bozDHJ9RMQaAaYPeOub7u?si=AGprdX4lS7SnSHWPs-VUQw" target="_blank">
+    🎵 Play our song
+  </a>
+</p>
+<h3>🔐 first secret message for you</h3>
+
+<p>Sirf tumhare liye hai… password daalo 🤍</p>
+<p style="font-size:14px;">Hint: hum dono ka meeting spot😌</p>
+
+<input type="password" id="passwordInput" placeholder="Enter password">
+
+<br><br>
+
+<button onclick="checkPassword()">Unlock 💌</button>
+
+<p id="error" style="color:red; display:none;">
+  chii itna v nhi pata tumko, phir se try karo
+</p>
+
+<p id="secretMessage" style="display:none; margin-top:20px; font-style:italic;">
+  to secret ye h ki hm kitna v bol de ki meko nai rehna sath lkn deep down back in my mind i have already planned a proper married life with you. ❤️  
+  i sometimes imagine all those thing with you .sath me ghumna ,bahr jana, shopping, skydiving, aur sab kuchhh jo tumhe pasad ho i enjoy being around you i cant express how blessed i feel to be around you . 🤍
+</p>
+<script>
+function checkPassword() {
+  const correctPassword = "jhula";
+  const enteredPassword = document.getElementById("passwordInput").value;
+
+  if (enteredPassword === correctPassword) {
+    document.getElementById("secretMessage").style.display = "block";
+    document.getElementById("error").style.display = "none";
+  } else {
+    document.getElementById("error").style.display = "block";
+  }
+}
+</script>
+
+<a href="chocolate.html">
+    <button>Next Surprise 🍫</button>
+  </a>
+  </div>
+
+<script>
+const today = new Date();
+if (today.getDate() === 7 && today.getMonth() === 1) {
+  document.getElementById("locked").style.display = "none";
+  document.getElementById("content").style.display = "block";
+}
+</script>
+
+</body>
+</html>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+

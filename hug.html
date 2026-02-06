@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hug Day 🤗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="hearts">
+  <span>❤️</span>
+  <span>💖</span>
+  <span>💕</span>
+  <span>💘</span>
+  <span>💗</span>
+
+<div id="locked">
+  <h2>🔒 Locked</h2>
+  <p>Hug thoda aur warm hone do 🤍</p>
+</div>
+
+<div id="content" style="display:none;">
+
+  <h1>🤗Happy warm warm Hug Day babu</h1>
+
+  <p>
+    At this point i can only give you virtual hugs 🤍rest real hugs will be pending  
+    i just wish i could just give a tight and long wala hug . but sad these distances exists so listen to this song linked below.  
+    real wala pending 
+  </p>
+<img src="images/us4.jpeg" class="photo">
+<p class="song">
+  <a href="https://open.spotify.com/track/5ro0tzQmZlM6Sgdtq4bGwH?si=PeRVAtZeTjyJdDVoZ60t2g" target="_blank">
+    🎵 Play our song
+  </a>
+</p>
+<h3>🔐 heehe annoy to ni ho gye n isse</h3>
+
+<p>Sirf tumhare liye hai… password daalo 🤍</p>
+<p style="font-size:14px;">Hint: first ever time we hugged </p>
+
+<input type="password" id="passwordInput" placeholder="Enter password">
+
+<br><br>
+
+<button onclick="checkPassword()">Unlock 💌</button>
+
+<p id="error" style="color:red; display:none;">
+  ab ye yaad nai to sad.phir se try karo
+</p>
+
+<p id="secretMessage" style="display:none; margin-top:20px; font-style:italic;">
+  ab tumse kya secret sb to tumhe pta hi h , vaise hug da k din agr hug day ki baat ki jaye to acha hoga toooooo if i tell you the very first time you actually hugged me was really very filmy rain , you , me and all before that day i was never been that close to anyone i felt a completly differnt feeling with is really very hard to express in words but truly i am really greatful to you for making me comfortable with all these and introducing me to something very amazing and comforting❤️  
+   🤍
+</p>
+<script>
+function checkPassword() {
+  const correctPassword = "26-07-24";
+  const enteredPassword = document.getElementById("passwordInput").value;
+
+  if (enteredPassword === correctPassword) {
+    document.getElementById("secretMessage").style.display = "block";
+    document.getElementById("error").style.display = "none";
+  } else {
+    document.getElementById("error").style.display = "block";
+  }
+}
+</script>
+
+  <a href="kiss.html">
+    <button>Next Surprise 😘</button>
+  </a>
+  </div>
+  <script>
+const today = new Date();
+if (today.getDate() === 7 && today.getMonth() === 1) {
+  document.getElementById("locked").style.display = "none";
+  document.getElementById("content").style.display = "block";
+}
+</script>
+</body>
+</html>
